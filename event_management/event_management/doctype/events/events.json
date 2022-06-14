@@ -1,0 +1,221 @@
+{
+ "autoname": "field:event_name",
+ "creation": "2022-06-13 02:21:33.843650",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "event_name",
+  "confirmed_event",
+  "approved_event",
+  "column_break_4",
+  "person",
+  "parner_organization_section",
+  "partner_organization",
+  "column_break_8",
+  "partner_contact",
+  "column_break_10",
+  "outreach_poc",
+  "column_break_12",
+  "outreach_vertical",
+  "event_schedule_section",
+  "date",
+  "column_break_9",
+  "start_time",
+  "column_break_11",
+  "end_time",
+  "event_information_section",
+  "location",
+  "space_center",
+  "column_break_23",
+  "number_of_guests",
+  "catering_vendor",
+  "column_break_26",
+  "av",
+  "budget",
+  "section_break_29",
+  "special_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "confirmed_event",
+   "fieldtype": "Check",
+   "label": "Confirmed Event"
+  },
+  {
+   "default": "0",
+   "fieldname": "approved_event",
+   "fieldtype": "Check",
+   "label": "Approved Event"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person",
+   "fieldtype": "Data",
+   "label": "Person"
+  },
+  {
+   "fieldname": "event_schedule_section",
+   "fieldtype": "Section Break",
+   "label": "Event Schedule"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "parner_organization_section",
+   "fieldtype": "Section Break",
+   "label": "Parner Organization"
+  },
+  {
+   "fieldname": "partner_organization",
+   "fieldtype": "Link",
+   "label": "Partner Organization",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partner_contact",
+   "fieldtype": "Data",
+   "label": "Partner Contact"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outreach_poc",
+   "fieldtype": "Data",
+   "label": "Outreach POC"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outreach_vertical",
+   "fieldtype": "Data",
+   "label": "Outreach Vertical"
+  },
+  {
+   "fieldname": "event_information_section",
+   "fieldtype": "Section Break",
+   "label": "Event Information"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "space_center",
+   "fieldtype": "Data",
+   "label": "Space (Center)"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_guests",
+   "fieldtype": "Int",
+   "label": "Number of Guests"
+  },
+  {
+   "fieldname": "catering_vendor",
+   "fieldtype": "Link",
+   "label": "Catering Vendor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "No",
+   "fieldname": "av",
+   "fieldtype": "Select",
+   "label": "AV",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "special_request",
+   "fieldtype": "Text",
+   "label": "Special Request"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  }
+ ],
+ "modified": "2022-06-13 06:37:49.834280",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Events",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "event_name",
+ "track_changes": 1
+}

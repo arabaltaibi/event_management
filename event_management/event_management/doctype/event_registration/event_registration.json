@@ -1,0 +1,125 @@
+{
+ "autoname": "field:event_name",
+ "creation": "2022-06-13 01:55:00.019359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_name",
+  "vaccination",
+  "column_break_3",
+  "guest",
+  "tour",
+  "column_break_6",
+  "type",
+  "comments",
+  "section_break_9",
+  "business_card_capture",
+  "column_break_11",
+  "business_card_imge",
+  "section_break_12",
+  "check_in_time",
+  "check_in_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Link",
+   "label": "Event Name",
+   "options": "Events",
+   "unique": 1
+  },
+  {
+   "fieldname": "vaccination",
+   "fieldtype": "Data",
+   "label": "Vaccination/PCR"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "tour",
+   "fieldtype": "Data",
+   "label": "Tour"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Primary",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Primary\n+1"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "business_card_capture",
+   "fieldtype": "Attach Image",
+   "label": "Business Card Capture"
+  },
+  {
+   "fieldname": "business_card_imge",
+   "fieldtype": "Image",
+   "label": "Business Card Imge",
+   "options": "business_card_capture"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Time",
+   "label": "Check in Time"
+  },
+  {
+   "fieldname": "check_in_by",
+   "fieldtype": "Data",
+   "label": "Check In By"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2022-06-13 06:33:14.474269",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Event Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
