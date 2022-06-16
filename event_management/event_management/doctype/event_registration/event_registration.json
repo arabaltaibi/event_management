@@ -5,10 +5,10 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "event_name",
-  "vaccination",
-  "column_break_3",
   "guest",
+  "event_name",
+  "column_break_3",
+  "vaccination",
   "tour",
   "column_break_6",
   "type",
@@ -41,8 +41,10 @@
   {
    "fieldname": "guest",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Guest",
-   "options": "Guest"
+   "options": "Guest",
+   "reqd": 1
   },
   {
    "fieldname": "tour",
@@ -99,7 +101,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2022-06-13 06:33:14.474269",
+ "modified": "2022-06-14 08:10:26.535383",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Event Registration",
@@ -118,7 +120,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

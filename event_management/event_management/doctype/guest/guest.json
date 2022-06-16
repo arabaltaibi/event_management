@@ -18,12 +18,17 @@
   "vip",
   "column_break_12",
   "rsvp_guests",
-  "barcode_id"
+  "section_break_14",
+  "barcode_id",
+  "column_break_16",
+  "qrcode_file",
+  "qrcode"
  ],
  "fields": [
   {
    "fieldname": "guest",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Guest Name"
   },
   {
@@ -33,6 +38,8 @@
   {
    "fieldname": "invited_by",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Invited By"
   },
   {
@@ -42,6 +49,8 @@
   {
    "fieldname": "event",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Event",
    "options": "Events"
   },
@@ -88,9 +97,28 @@
    "fieldname": "barcode_id",
    "fieldtype": "Barcode",
    "label": "Barcode Id"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qrcode_file",
+   "fieldtype": "Attach Image",
+   "label": "Qrcode File"
+  },
+  {
+   "fieldname": "qrcode",
+   "fieldtype": "Image",
+   "label": "Qrcode",
+   "options": "qrcode_file"
   }
  ],
- "modified": "2022-06-13 09:09:06.114028",
+ "modified": "2022-06-15 21:58:50.346130",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Guest",
