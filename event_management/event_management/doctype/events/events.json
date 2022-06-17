@@ -113,29 +113,35 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "partner_organization.partner_contact",
    "fieldname": "partner_contact",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Partner Contact"
+   "label": "Partner Contact",
+   "options": "Contact"
   },
   {
    "fieldname": "column_break_10",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "partner_organization.outreach_poc",
    "fieldname": "outreach_poc",
-   "fieldtype": "Data",
-   "label": "Outreach POC"
+   "fieldtype": "Link",
+   "label": "Outreach POC",
+   "options": "Contact"
   },
   {
    "fieldname": "column_break_12",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "partner_organization.outreach_vertical",
    "fieldname": "outreach_vertical",
-   "fieldtype": "Data",
-   "label": "Outreach Vertical"
+   "fieldtype": "Link",
+   "label": "Outreach Vertical",
+   "options": "Vertical"
   },
   {
    "fieldname": "event_information_section",
@@ -200,7 +206,7 @@
    "read_only": 1
   }
  ],
- "modified": "2022-06-15 22:01:30.355092",
+ "modified": "2022-06-16 21:42:44.526655",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Events",

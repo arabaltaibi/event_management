@@ -61,6 +61,13 @@ def get_data():
 					"description": _("Vertical"),
 					"onboard": 1,
 				},
+				{
+					"type": "doctype",
+					"name": "Catering Vendor",
+					"description": _("Catering Vendor"),
+					"onboard": 1,
+				},
+
 			]
 		},
 		{

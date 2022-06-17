@@ -2,7 +2,13 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Guest', {
-	// refresh: function(frm) {
-
-	// }
-});
+	refresh(frm) {
+		// your code here
+		  if (!frm.doc.barcode_id){
+             frm.set_value("barcode_id",frm.doc.name)
+	    }
+	},
+	validate(frm){
+	  
+	}
+})

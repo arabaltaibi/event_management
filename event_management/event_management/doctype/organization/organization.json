@@ -1,5 +1,5 @@
 {
- "autoname": "field:organization_name",
+ "autoname": "field:org_name",
  "creation": "2022-06-13 05:59:08.020660",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,8 +10,15 @@
   "column_break_3",
   "alias",
   "country",
+  "organization_contact_info_section",
+  "partner_contact",
+  "column_break_8",
+  "outreach_vertical",
+  "column_break_10",
+  "outreach_poc",
   "section_break_6",
-  "contacts"
+  "contacts",
+  "org_name"
  ],
  "fields": [
   {
@@ -63,9 +70,47 @@
    "fieldtype": "Table",
    "label": "Contacts",
    "options": "Organization Contacts"
+  },
+  {
+   "fieldname": "organization_contact_info_section",
+   "fieldtype": "Section Break",
+   "label": "Organization Contact Info"
+  },
+  {
+   "fieldname": "partner_contact",
+   "fieldtype": "Link",
+   "label": "Partner Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outreach_vertical",
+   "fieldtype": "Link",
+   "label": "Outreach Vertical",
+   "options": "Vertical"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outreach_poc",
+   "fieldtype": "Link",
+   "label": "Outreach POC",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "org_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "org_name",
+   "unique": 1
   }
  ],
- "modified": "2022-06-15 23:52:00.662077",
+ "modified": "2022-06-16 21:38:01.188148",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Organization",
@@ -88,6 +133,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "organization_name",
+ "title_field": "org_name",
  "track_changes": 1
 }
