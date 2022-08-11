@@ -85,6 +85,13 @@ def get_data():
 					"description": _("Volunteers"),
 					"onboard": 1,
 				},
+				{
+					"type": "doctype",
+					"name": "Contact",
+					"description": _("Contacts of People"),
+                    "label": _("Contacts of People"),
+					"onboard": 1,
+				},
 
 			]
 		},

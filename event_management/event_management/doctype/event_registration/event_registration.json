@@ -1,33 +1,44 @@
 {
- "autoname": "field:event_name",
+ "autoname": "field:guest_name",
  "creation": "2022-06-13 01:55:00.019359",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "guest",
   "event_name",
+  "guest",
   "column_break_3",
   "vaccination",
   "tour",
   "column_break_6",
   "type",
   "comments",
+  "guest_information_section",
+  "guest_name",
+  "cb11",
+  "contact",
+  "column_break_13",
+  "mobile_no",
+  "column_break_15",
+  "phone_no",
   "section_break_9",
   "business_card_capture",
   "column_break_11",
   "business_card_imge",
   "section_break_12",
   "check_in_time",
-  "check_in_by"
+  "check_in_by",
+  "amended_from"
  ],
  "fields": [
   {
+   "fetch_from": "guest.event",
    "fieldname": "event_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Event Name",
-   "options": "Events",
-   "unique": 1
+   "options": "Events"
   },
   {
    "fieldname": "vaccination",
@@ -41,7 +52,9 @@
   {
    "fieldname": "guest",
    "fieldtype": "Link",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Guest",
    "options": "Guest",
    "reqd": 1
@@ -59,6 +72,8 @@
    "default": "Primary",
    "fieldname": "type",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Type",
    "options": "Primary\n+1"
   },
@@ -99,15 +114,69 @@
   {
    "fieldname": "column_break_11",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guest_information_section",
+   "fieldtype": "Section Break",
+   "label": "Guest Information"
+  },
+  {
+   "fetch_from": "guest.guest",
+   "fieldname": "guest_name",
+   "fieldtype": "Read Only",
+   "label": "Guest Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "cb11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "guest.contact",
+   "fieldname": "contact",
+   "fieldtype": "Read Only",
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "guest.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "guest.phone_no",
+   "fieldname": "phone_no",
+   "fieldtype": "Read Only",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Event Registration",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2022-06-14 08:10:26.535383",
- "modified_by": "Administrator",
+ "is_submittable": 1,
+ "modified": "2022-07-29 17:09:34.169508",
+ "modified_by": "afshan.jamal@ismailicentredubai.org",
  "module": "Event Management",
  "name": "Event Registration",
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -117,10 +186,10 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+ "sort_order": "DESC"
 }

@@ -1,0 +1,110 @@
+{
+ "creation": "2022-07-28 16:42:15.749119",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guest_id",
+  "guest",
+  "column_break_3",
+  "invited_by",
+  "phone_no",
+  "column_break_6",
+  "mobile_no",
+  "email",
+  "section_break_9",
+  "rsvp",
+  "response",
+  "respond_status",
+  "rsvp_comments",
+  "rsvp_guests"
+ ],
+ "fields": [
+  {
+   "fieldname": "guest_id",
+   "fieldtype": "Link",
+   "label": "Guest ID",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "guest",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invited_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invited By"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rsvp",
+   "fieldtype": "Select",
+   "label": "RSVP",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Select",
+   "label": "Response",
+   "options": "\nNot Responded\nResponded"
+  },
+  {
+   "fieldname": "respond_status",
+   "fieldtype": "Select",
+   "label": "Respond Status",
+   "options": "\nAttending\nNot Attending"
+  },
+  {
+   "fieldname": "rsvp_comments",
+   "fieldtype": "Data",
+   "label": "RSVP Comments"
+  },
+  {
+   "fieldname": "rsvp_guests",
+   "fieldtype": "Data",
+   "label": "RSVP Guests"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-07-28 16:42:15.749119",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Invited Members",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -11,6 +11,7 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City",
@@ -21,13 +22,14 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "country",
    "fieldtype": "Link",
    "label": "Country",
    "options": "Country"
   }
  ],
- "modified": "2022-06-13 06:00:51.993991",
+ "modified": "2022-06-17 11:51:19.333523",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "City",

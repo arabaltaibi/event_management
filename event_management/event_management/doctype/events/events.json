@@ -35,7 +35,12 @@
   "av",
   "budget",
   "section_break_29",
-  "special_request"
+  "special_request",
+  "column_break_32",
+  "members_section",
+  "invited_members",
+  "column_break_35",
+  "attended_members"
  ],
  "fields": [
   {
@@ -62,8 +67,9 @@
   },
   {
    "fieldname": "person",
-   "fieldtype": "Data",
-   "label": "Person"
+   "fieldtype": "Link",
+   "label": "Person",
+   "options": "Contact"
   },
   {
    "fieldname": "event_schedule_section",
@@ -172,7 +178,7 @@
    "fieldname": "catering_vendor",
    "fieldtype": "Link",
    "label": "Catering Vendor",
-   "options": "Supplier"
+   "options": "Catering Vendor"
   },
   {
    "fieldname": "column_break_26",
@@ -204,9 +210,35 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "members_section",
+   "fieldtype": "Section Break",
+   "label": "Invited Members"
+  },
+  {
+   "fieldname": "invited_members",
+   "fieldtype": "Table",
+   "options": "Invited Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Section Break",
+   "label": "Attended Members"
+  },
+  {
+   "fieldname": "attended_members",
+   "fieldtype": "Table",
+   "options": "Attended Members",
+   "read_only": 1
   }
  ],
- "modified": "2022-06-16 21:42:44.526655",
+ "modified": "2022-07-30 11:54:03.752914",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Events",

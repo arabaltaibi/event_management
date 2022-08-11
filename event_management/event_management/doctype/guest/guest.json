@@ -10,17 +10,30 @@
   "invited_by",
   "column_break_4",
   "event",
-  "section_break_6",
-  "rsvp",
-  "rsvp_comments",
+  "guest_contact_section",
+  "contact",
+  "column_break_8",
+  "mobile_no",
   "column_break_10",
-  "total_guests",
-  "vip",
+  "phone_no",
   "column_break_12",
+  "email",
+  "section_break_6",
+  "total_guests",
+  "column_break_15",
+  "vip",
+  "rsvp_section",
+  "response",
+  "rsvp",
+  "cb_20",
+  "respond_status",
+  "cb_22",
+  "rsvp_comments",
+  "column_break_23",
   "rsvp_guests",
   "section_break_14",
   "barcode_id",
-  "column_break_16",
+  "column_break_22",
   "qrcode_file",
   "qrcode"
  ],
@@ -71,6 +84,7 @@
    "label": "RSVP"
   },
   {
+   "depends_on": "response",
    "fieldname": "rsvp_comments",
    "fieldtype": "Data",
    "label": "RSVP Comments"
@@ -85,13 +99,10 @@
    "label": "VIP"
   },
   {
+   "depends_on": "response",
    "fieldname": "rsvp_guests",
    "fieldtype": "Int",
    "label": "RSVP Guests"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "barcode_id",
@@ -103,10 +114,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_16",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "qrcode_file",
    "fieldtype": "Attach Image",
    "label": "Qrcode File"
@@ -116,9 +123,82 @@
    "fieldtype": "Image",
    "label": "Qrcode",
    "options": "qrcode_file"
+  },
+  {
+   "fieldname": "guest_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Guest Contact"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rsvp_section",
+   "fieldtype": "Section Break",
+   "label": "RSVP"
+  },
+  {
+   "depends_on": "eval:doc.rsvp == 1",
+   "fieldname": "response",
+   "fieldtype": "Select",
+   "label": "Response",
+   "options": "\nNot Responded\nResponded"
+  },
+  {
+   "fieldname": "cb_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.response == \"Responded\"",
+   "fieldname": "respond_status",
+   "fieldtype": "Select",
+   "label": "Respond Status",
+   "options": "\nAttending\nNot Attending"
+  },
+  {
+   "fieldname": "cb_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
- "modified": "2022-06-15 21:58:50.346130",
+ "modified": "2022-07-28 16:52:07.054241",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Guest",

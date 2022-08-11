@@ -1,0 +1,69 @@
+{
+ "creation": "2022-07-28 17:39:18.120109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guest",
+  "guest_name",
+  "contact",
+  "mobile_no",
+  "phone_no",
+  "check_in_time",
+  "check_in_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Guest"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guest Name"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Check in Time"
+  },
+  {
+   "fieldname": "check_in_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Check In By"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-07-28 17:39:18.120109",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Attended Members",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
